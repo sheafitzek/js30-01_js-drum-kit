@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Vulgar Display of Power';
+  src: url("../fonts/VULGARDISPLAYOFPOWER.ttf") format("truetype");
+}
+
+html {
+  font-size: 10px;
+  background: url("../media/images/Lego_Drums.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.75);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  color: #fafc37;
+  display: block;
+  font-family: "Vulgar Display of Power";
+  font-size: 4rem;
+}
+
+.sound {
+  color: #00ff01;
+  font-family: "Russo One";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+ 
+
+ /*# sourceMappingURL= index.css.map */
