@@ -3,89 +3,94 @@
 	src: url('../fonts/VULGARDISPLAYOFPOWER.ttf') format('truetype');
 }
 
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
 html {
-	// font-size: 62.5%; /* 62.5% of (std) 16px = 10px = 1em = 1rem */
-	background: url("../media/images/Lego_Drums.jpg") no-repeat center center fixed;
 	background-size: cover;
+	background: url("../media/images/Lego_Drums.jpg") no-repeat center center fixed;
+	font-size: 62.5%;
 }
 body,html {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
 	font-family: sans-serif;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
 }
 
 .keys {
-	display: flex;
-	flex: 1;
-	flex-wrap: wrap;
-	min-height: 100vh;
-	align-items: flex-end;
 	align-content: flex-end;
+	align-items: flex-end;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
 	justify-content: center;
+	min-height: 100vh;
 	user-select: none;
 }
 
 .key {
-	border: .4rem solid black;
-	border-radius: 50%;
-	margin: 1rem;
-	margin-bottom: 4rem;
-	// font-size: 1.5rem;
-	padding: 1rem .5rem;
-	transition: all .15s ease;
-	// width: 8rem;
-	text-align: center;
-	color: white;
 	background: rgba(0,0,0,0.75);
+	border-radius: 50%;
+	border: .4rem solid black;
+	color: white;
+	text-align: center;
 	text-shadow: 0 0 .5rem black;
+	transition: all 0.1s ease;
 }
 
 .playing {
-	transform: scale(1.4);
 	border-color: #cc30ff;
 	box-shadow: 0 0 2.5rem #cc30ff;
+	transform: scale(1.25);
 }
 
 kbd {
 	color: #fafc37;
 	display: block;
 	font-family: "Vulgar Display of Power";
-	// font-size: 4rem;
 }
 
 .sound {
 	color: #00ff01;
 	font-family: "Russo One";
-	// font-size: 1.2rem;
-	text-transform: uppercase;
 	letter-spacing: .1rem;
+	text-transform: uppercase;
 }
 
 @media screen and (orientation: landscape) {
 	.key {
-		width: calc(100vw / 20);
+		margin: 1rem 1vmax;
+		margin-bottom: 4rem;
+		padding: 1rem 0.25vmax;
+		width: calc(11vmax - 2.5vmax);
 	}
 
 	.sound {
-		font-size: calc(100vw / 120);
+		font-size: 1vmax;
 	}
 
 	kbd {
-		font-size: calc(100vw / 25);
+		font-size: calc(4vmax);
 	}
 }
 
 @media screen and (orientation: portrait) {
 	.key {
-		width: calc(100vw / 10);
+		margin: 1rem 1vmin;
+		margin-bottom: 4rem;
+		padding: 1rem 0.25vmin;
+		width: calc(20vmin - 2.5vmin);
 	}
 
 	.sound {
-		font-size: calc(100vw / 50);
+		font-size: 2vmin;
 	}
 
 	kbd {
-		font-size: calc(100vw / 20);
+		font-size: calc(8vmin);
 	}
 }

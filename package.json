@@ -1,0 +1,23 @@
+{
+  "name": "js30-1_js-drum-kit",
+  "version": "1.0.0",
+  "description": "A Simple Javascript Drum Kit",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "gh-pages -d src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheafitzek/js30-1_js-drum-kit.git"
+  },
+  "author": "Shea Fitzek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheafitzek/js30-1_js-drum-kit/issues"
+  },
+  "homepage": "https://github.com/sheafitzek/js30-1_js-drum-kit",
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
+  }
+}
